@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoLife – Carbon Awareness for Students</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root{
+            --green:#2e7d32;
+            --light:#f4faf5;
+            --dark:#1c1c1c;
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(180deg,#f7fff9,#ffffff);
+            color:var(--dark);
+        }
+
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:18px 8%;
+        }
+
+        header h2{
+            font-weight:600;
+            letter-spacing:0.5px;
+        }
+
+        header a{
+            text-decoration:none;
+            margin-left:12px;
+            padding:8px 16px;
+            border-radius:6px;
+            font-size:14px;
+            transition:0.2s ease;
+        }
+
+        .btn{
+            background:var(--green);
+            color:#fff;
+        }
+
+        .btn:hover{
+            opacity:0.85;
+        }
+
+        .btn-outline{
+            border:1px solid var(--green);
+            color:var(--green);
+            background:transparent;
+        }
+
+        .hero{
+            min-height:80vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:0 8%;
+        }
+
+        .hero-box{
+            max-width:720px;
+            animation:fadeUp 0.9s ease;
+        }
+
+        .hero h1{
+            font-size:clamp(2rem,5vw,3rem);
+            margin-bottom:16px;
+            font-weight:700;
+        }
+
+        .hero p{
+            font-size:1.05rem;
+            line-height:1.7;
+            opacity:0.85;
+            margin-bottom:28px;
+        }
+
+        .hero-actions a{
+            display:inline-block;
+            margin:8px;
+            padding:12px 28px;
+            border-radius:8px;
+            font-weight:500;
+        }
+
+        .features{
+            padding:70px 8%;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:24px;
+        }
+
+        .feature{
+            background:var(--light);
+            padding:28px;
+            border-radius:14px;
+            transition:transform 0.25s ease;
+        }
+
+        .feature:hover{
+            transform:translateY(-6px);
+        }
+
+        .feature span{
+            font-size:26px;
+        }
+
+        .feature h3{
+            margin:14px 0 8px;
+            font-size:1.1rem;
+        }
+
+        .feature p{
+            font-size:0.95rem;
+            opacity:0.8;
+        }
+
+        footer{
+            text-align:center;
+            padding:24px;
+            font-size:0.85rem;
+            opacity:0.7;
+        }
+
+        @keyframes fadeUp{
+            from{
+                opacity:0;
+                transform:translateY(25px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>🌱 EcoLife</h2>
+    <nav>
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="signup.html" class="btn">Create Account</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-box">
+        <h1>Understand Your Impact.<br>Reduce It Thoughtfully.</h1>
+        <p>
+            EcoLife is a student-focused carbon awareness platform that
+            turns everyday activities into clear environmental insights
+            — without complexity.
+        </p>
+
+        <div class="hero-actions">
+            <a href="signup.html" class="btn">Start Tracking</a>
+            <a href="login.html" class="btn-outline">I already have an account</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <span>📊</span>
+        <h3>Personal Carbon Insights</h3>
+        <p>Track emissions from daily habits with meaningful, readable data.</p>
+    </div>
+
+    <div class="feature">
+        <span>🌍</span>
+        <h3>Smarter Eco Choices</h3>
+        <p>Receive practical suggestions tailored for student lifestyles.</p>
+    </div>
+
+    <div class="feature">
+        <span>📈</span>
+        <h3>Progress You Can See</h3>
+        <p>Visual reports that show improvement, not just numbers.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 EcoLife · Built with intent for conscious students
+</footer>
+
+</body>
+</html>
